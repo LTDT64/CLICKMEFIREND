@@ -1,60 +1,19 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rickroll with Style</title>
-    <style>
-
-        body {
-            margin: 0;
-            height: 100vh;
-            overflow: hidden;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background: black;
-        }
-
-        .background-video {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            filter: blur(20px) brightness(0.5);
-            z-index: -1;
-        }
-
-        .video-container {
-            position: relative;
-            z-index: 1;
-        }
-
-        iframe {
-            border: none;
-        }
-    </style>
+    <title>Rickroll Time</title>
 </head>
-<body>
-
-    <video class="background-video" autoplay muted loop>
-        <source src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1&mute=1" type="video/mp4">
-
-    </video>
-
-    <div class="video-container">
-        <iframe 
-            width="560" 
-            height="315" 
-            src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1" 
-            title="YouTube video player" 
-            frameborder="0" 
-            allow="autoplay; encrypted-media; fullscreen; picture-in-picture" 
-            allowfullscreen>
-        </iframe>
-    </div>
+<body style="display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; background-color: #f3f3f3;">
+    <iframe 
+        width="560" 
+        height="315" 
+        src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1" 
+        title="YouTube video player" 
+        frameborder="0" 
+        allow="autoplay; encrypted-media; fullscreen; picture-in-picture" 
+        allowfullscreen>
+    </iframe>
 </body>
 </html>
